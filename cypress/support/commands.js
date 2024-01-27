@@ -1,5 +1,3 @@
-
-
 Cypress.Commands.add('loginAs', (userName) => {
     cy.log(`Log in as ${userName}`);
     cy.fixture('envs/demo/users').then((users) => {
