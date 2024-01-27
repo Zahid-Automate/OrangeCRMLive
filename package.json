@@ -8,11 +8,12 @@
     "test": "npx cypress run --headed --reporter mochawesome",
     "logintest": "npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js",
     "addUsertest": "npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyUser.cy.js",
-    "addCandidatetest": "npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyCandidate.cy.js"
+    "addCandidatetest": "npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyCandidate.cy.js",
+    "verifyReporttest": "npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/viewAndVerifyReport.cy.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zahid-Automate/CodingTest.git"
+    "url": "git+https://github.com/Zahid-Automate/OrangeCRMLive.git"
   },
   "keywords": [
     "Cypress",
@@ -21,10 +22,11 @@
   "author": "Mohammed A Zahid",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zahid-Automate/CodingTest/issues"
+    "url": "https://github.com/Zahid-Automate/OrangeCRMLive/issues"
   },
-  "homepage": "https://github.com/Zahid-Automate/CodingTest#readme",
+  "homepage": "https://github.com/Zahid-Automate/OrangeCRMLive#readme",
   "devDependencies": {
+    "@types/cypress": "^1.1.3",
     "cypress": "^13.6.3",
     "mochawesome": "^7.1.3"
   }
