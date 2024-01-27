@@ -1,0 +1,30 @@
+{
+  "adminEnabled": {
+    "userRole": "Admin",
+    "status": "Enabled",
+    "employeeName": "John",
+    "username": "CyAdminEnabled",
+    "password": "Cypress123#@"
+  },
+  "adminDisabled": {
+    "userRole": "Admin",
+    "status": "Disabled",
+    "employeeName": "John",
+    "username": "CyAdminDisabled",
+    "password": "Cypress123#@"
+  },
+  "essEnabled": {
+    "userRole": "Admin",
+    "status": "Disabled",
+    "employeeName": "John",
+    "username": "CyEssEnabled",
+    "password": "Cypress123#@"
+  },
+  "essDisabled": {
+    "userRole": "Admin",
+    "status": "Disabled",
+    "employeeName": "John",
+    "username": "CyEssDisabled",
+    "password": "Cypress123#@"
+  }
+}

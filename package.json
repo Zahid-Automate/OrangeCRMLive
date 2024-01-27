@@ -1,0 +1,31 @@
+{
+  "name": "codingtest",
+  "version": "1.0.0",
+  "description": "Coding Test for QA Automation Engineers for Cypress and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "cypressopen": "npx cypress open",
+    "test": "npx cypress run --headed --reporter mochawesome",
+    "logintest": "npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js",
+    "addUsertest": "npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyUser.cy.js",
+    "addCandidatetest": "npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyCandidate.cy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zahid-Automate/CodingTest.git"
+  },
+  "keywords": [
+    "Cypress",
+    "JavaScript"
+  ],
+  "author": "Mohammed A Zahid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zahid-Automate/CodingTest/issues"
+  },
+  "homepage": "https://github.com/Zahid-Automate/CodingTest#readme",
+  "devDependencies": {
+    "cypress": "^13.6.3",
+    "mochawesome": "^7.1.3"
+  }
+}
