@@ -15,7 +15,7 @@ Framework structure:
 | mocha-awesome        | Contains HTML reports generated                                                  |
 | cypress.config.js    | Configuration file used by Cypress to customize its behavior and settings        |
 | package.json         | Contains scripts to run the test cases and github details                        |
-| .gitignore           | Contains files/folders which have to ignore for every git commit                 |
+| .gitignore           | Contains files/folders that have to be ignored for every git commit              |
 
 Instructions on how to run the tests are below\
 **Pre-requisite**: 
@@ -53,22 +53,37 @@ user.json - This is used to get the credentials for various users based on the e
 
 **Custom commands** (Present in cypress/support/command.js)
 
-cy.loginAs<UserType> This command is used to login with the application\
-cy.openMenuItem<MenuName> This command is used to open any menu item present on the left hand side after login with the application\
-cy.AddUser<userType> This command is used to add a new user \
-cy.verifyUserAndDelete<addedUser> This command is used to verify the the user was added successfully and then delete the added user
+cy.loginAs<UserType>: This command is used to login with the application\
+cy.openMenuItem<MenuName>: This command is used to open any menu item present on the left-hand side after login with the application\
+cy.AddUser<userType>: This command is used to add a new users \
+cy.verifyUserAndDelete<addedUser>: This command is used to verify that the user was added successfully and then delete the added user
 
 ================================\
 How to run Cypress in open mode\
 ================================\
-Use the below command to run Cypress in open mode and follow the below steps
-1. npx cypress open(Ss attach)
+Use the below command from terminal to run Cypress in open mode and follow the below steps
+1. npx cypress open\
    => Wait for Cypress window to get opened
-2. Select e2e test cases
-3. Select browser of your choice
-4. Click on start e2e testing in 
+   <img width="946" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/2137428f-25c7-498e-a64e-7f29f997b25f">
 
-Screen shots attached
+2. Click on ***E22 Testing***
+3. Select the browser of your choice and click on ***Start E2E Testing in Chrome***
+ <img width="942" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/656b7fc4-00b4-4340-bead-4118202174d4">
+ 
+4. From the Specs menu , click on any of the test cases present to be run 
+<img width="959" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/fa28a094-1391-4ad1-8e1d-d81c18d8cb5e">
++++
+Test case results
+**login test**
+<img width="956" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/a693df3c-6330-40a4-b6c5-89ad86e2596f">
+**Add and verify user**
+<img width="950" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/b3586bd6-95c2-42a6-8fcd-a4b6ae04a746">
+**Add and verify candidate**
+<img width="958" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/17fc55a9-9207-426b-bff0-14d8d8e1fd48">
+**View and verify report**
+<img width="955" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/42f48e08-cef5-4324-9e2e-a437d498498a">
 
-in open mode 
-   
+
+
+
+  
