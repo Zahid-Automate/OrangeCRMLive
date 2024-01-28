@@ -83,6 +83,9 @@ Test case results
 **View and verify report**
 <img width="955" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/42f48e08-cef5-4324-9e2e-a437d498498a">
 
+**Run all the scripts together**
+<img width="960" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/a3a73423-4a90-4a8d-bc57-a45dbc975dee">
+
 
 
 
