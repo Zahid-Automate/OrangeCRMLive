@@ -51,12 +51,12 @@ describe('Coding Test for QA Automation Engineers', () => {
     cy.wait("@report");
 
     //Assertions
-    cy.get('.cell-action[data-rgcol="0"][data-rgrow="0"]').should('have.text','Bug Fixes');
+    cy.get('.cell-action[data-rgcol="0"][data-rgrow="0"]').should("be.visible").and("have.text",'Bug Fixes');
     cy.get('.cell-action[data-rgcol="0"][data-rgrow="1"]').should('have.text','Feature Development');
     cy.get('.cell-action[data-rgcol="0"][data-rgrow="2"]').should('have.text','Implementation');
     cy.get('.cell-action[data-rgcol="0"][data-rgrow="3"]').should('have.text','QA Testing');
     cy.get('.cell-action[data-rgcol="0"][data-rgrow="4"]').should('have.text','Requirement Gathering');
-    cy.get('.cell-action[data-rgcol="0"][data-rgrow="5"]').should('have.text','Support & Maintanence')
+    cy.get('.cell-action[data-rgcol="0"][data-rgrow="5"]').should('have.text','Support & Maintanence');
 
    
 
