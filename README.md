@@ -21,26 +21,26 @@ Instructions on how to run the tests are below\
 **Pre-requisite**: 
 Install the latest version of node.js from the link https://nodejs.org/en
 
-**Step 1**: Clone the repository using the below command\
- git clone https://github.com/Zahid-Automate/OrangeCRMLive.git
-
-**Step 2:** Install the required dependencies from terminal using below command\
- npm ci
-
-**Step 3:** Use the below command from terminal to run login scenario\
-npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
-
-**Step 4:** Use the below command from terminal to run User/Candidate Creation scenario\
-npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyUser.cy.js",
-
-**Step 5:** Use the below command from terminal to run User/Candidate details verification scenario\
-npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
-
-**Step 6:** Use the below command from terminal to run View and Verify the project time report scenario\
-npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
-
-**To run all the scenarios use the below command in terminal**\
-npx cypress run --headed --reporter mochawesome
+&emsp;**Step 1**: Clone the repository using the below command\
+   git clone https://github.com/Zahid-Automate/OrangeCRMLive.git
+  
+  &emsp;**Step 2:** Install the required dependencies from terminal using below command\
+   npm ci
+  
+  &emsp;**Step 3:** Use the below command from terminal to run login scenario\
+  npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
+  
+  &emsp;**Step 4:** Use the below command from terminal to run User/Candidate Creation scenario\
+  npx cypress run --headed --reporter mochawesome --spec cypress/e2e/test/addAndVerifyUser.cy.js",
+  
+  &emsp;**Step 5:** Use the below command from terminal to run User/Candidate details verification scenario\
+  npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
+  
+  &emsp;**Step 6:** Use the below command from terminal to run View and Verify the project time report scenario\
+  npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
+  
+  **To run all the scenarios use the below command in terminal**\
+  npx cypress run --headed --reporter mochawesome
 
 
 Reports will be visible in mocha-awesome folder present at the root of the project
