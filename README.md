@@ -1,19 +1,21 @@
-Test the basic functionalities of the OrangeHRM app.
+Automate and verify the below basic functionalities of the OrangeHRM app.
 1. Login
 2. User/Candidate Creation
 3. Created User/Candidate details verification
 4. View and Verify the project time report
 
 Framework structure:
-e2e : all test cases
-fixtures: all environments
-support folder: custom commands
-configuration file : 
-download folder :
-screenshot folder :
-mocha-awesome folder: for reports
-package.json : 
-gitigone : includes files that should be ignored for commit 
+
+| **Folder/FileName**  | **Purpose**                                                                      |
+|----------------------|----------------------------------------------------------------------------------|
+| e2e\test             | Includes all the test cases                                                      |
+| fixtures\env\demo    | Includes json files to parameterize the tests (addUser.json and users.json)      |
+| support              | Contains re-usable Cypress.commands in command.js                                |
+| screenshots          | Contains screenshots when test case fails                                        |
+| mocha-awesome        | Contains HTML reports generated                                                  |
+| cypress.config.js    | Configuration file used by Cypress to customize its behavior and settings        |
+| package.json         | Contains scripts to run the test cases and github details                        |
+| .gitignore           | Contains files/folders which have to ignore for every git commit                 |
 
 Instructions on how to run the tests are below\
 **Pre-requisite**: 
@@ -22,7 +24,7 @@ Install the latest version of node.js from the link https://nodejs.org/en
 **Step 1**: Clone the repository using the below command\
  git clone https://github.com/Zahid-Automate/OrangeCRMLive.git
 
-**Step 2:** Install the required dependencies\
+**Step 2:** Install the required dependencies from terminal using below command\
  npm ci
 
 **Step 3:** Use the below command from terminal to run login scenario\
@@ -56,9 +58,9 @@ cy.openMenuItem<MenuName> This command is used to open any menu item present on 
 cy.AddUser<userType> This command is used to add a new user \
 cy.verifyUserAndDelete<addedUser> This command is used to verify the the user was added successfully and then delete the added user
 
-================================
-How to run Cypress in open mode
-
+================================\
+How to run Cypress in open mode\
+================================\
 Use the below command to run Cypress in open mode and follow the below steps
 1. npx cypress open(Ss attach)
    => Wait for Cypress window to get opened
