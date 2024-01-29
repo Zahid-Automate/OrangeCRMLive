@@ -21,12 +21,16 @@ Instructions on how to run the tests are below\
 **Pre-requisite**: 
 Install the latest version of node.js from the link https://nodejs.org/en
 
-&emsp;**Step 1**: Clone the repository using the below command\
+&emsp;**Step 1**: Clone the repository using VS Code editor as shown in screen shots below\
    git clone https://github.com/Zahid-Automate/OrangeCRMLive.git
+  <img width="868" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/c77e8ea7-e169-43b0-830f-8899e56313e5">
+  <img width="722" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/bd2a90f2-22d4-4217-bad0-73d2b16c2ce1">
   
+
   &emsp;**Step 2:** Install the required dependencies from terminal using below command\
-   npm ci
-  
+   npm ci\
+  <img width="752" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/ea76e64c-7a19-4d84-8987-e8ee4c1c01e5">
+
   &emsp;**Step 3:** Use the below command from terminal to run login scenario\
   npx cypress run --headed --reporter mochawesome --spec ./cypress/e2e/test/loginTest.cy.js
   
@@ -41,6 +45,7 @@ Install the latest version of node.js from the link https://nodejs.org/en
   
   **To run all the scenarios use the below command in terminal**\
   npx cypress run --headed --reporter mochawesome
+  <img width="761" alt="image" src="https://github.com/Zahid-Automate/OrangeCRMLive/assets/45691238/fb065bb8-a5db-4601-aa4f-85a4b5d212a3">
 
 
 Reports will be visible in mocha-awesome folder present at the root of the project
