@@ -74,7 +74,8 @@ Cypress.Commands.add('AddUser',(userType)=>{
             cy.get("input[placeholder='Type for hints...']").type(addUserData[userType].employeeName).then(()=>{
                 cy.wait(3000);
             });
-            cy.get("[class=\"oxd-autocomplete-option\"]").click({force:true});
+            cy.get('[class=\"oxd-autocomplete-option\"]', { timeout: 10000 }).should('be.visible');
+            cy.get("[class=\"oxd-autocomplete-option\"]").first().click({force:true});
             cy.get("input[type=\"password\"]").each((passwordEl)=>{
                 cy.wrap(passwordEl).type(addUserData[userType].password);
             });
