@@ -14,14 +14,14 @@
     "password": "Cypress123#@"
   },
   "essEnabled": {
-    "userRole": "Admin",
+    "userRole": "ESS",
     "status": "Disabled",
     "employeeName": "John",
     "username": "CyEssEnabled",
     "password": "Cypress123#@"
   },
   "essDisabled": {
-    "userRole": "Admin",
+    "userRole": "ESS",
     "status": "Disabled",
     "employeeName": "John",
     "username": "CyEssDisabled",

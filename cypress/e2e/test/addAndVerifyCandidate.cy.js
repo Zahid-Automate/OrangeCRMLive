@@ -78,7 +78,7 @@ describe('Coding Test for QA Automation Engineers', () => {
 
 
         // Verify the Details of Candidate
-        cy.get("form[class='oxd-form'] h6[class='oxd-text oxd-text--h6 orangehrm-main-title']").should("be.visible");
+        cy.get("form[class='oxd-form'] h6[class='oxd-text oxd-text--h6 orangehrm-main-title']",{timeout: 10000}).should("be.visible");
         cy.get("div[class='oxd-grid-3 orangehrm-full-width-grid'] div:nth-child(1) div:nth-child(1) div:nth-child(2) p:nth-child(1)").should("have.text","Cypress  Automation");
         
 
@@ -89,6 +89,24 @@ describe('Coding Test for QA Automation Engineers', () => {
         cy.wait("@weekendApi");
 
         cy.get("button[class=\"oxd-icon-button\"]").eq(1).click({force:true});
+
+        //Delete the user which was created
+        cy.contains('.oxd-table-cell', 'Cypress Automation').scrollIntoView();
+        cy.contains('.oxd-table-cell', 'Cypress Automation').should('exist');
+
+        // Click on the trash icon button associated with the text "Cypress Automation"
+        cy.contains('.oxd-table-cell', 'Cypress Automation')  // Locate the cell containing the text "Cypress Automation"
+        .parent()                                     // Navigate to the parent element (oxd-table-row)
+        .find('button[data-v-f5c763eb]:eq(1)')        // Find the trash icon button within the action buttons
+        .click({force:true});                         // Click on the trash icon button
+
+        cy.get('.oxd-button--label-danger').click({force:true});
+
+        //Verify deletion of candidate was successful
+        cy.get('.oxd-text--toast-title').should('have.text','Success')
+        cy.get('.oxd-text--toast-message').should('have.text','Successfully Deleted')
+
+
 
     });
 
