@@ -1,4 +1,4 @@
-Automate and verify the below basic functionalities of the OrangeHRM app.
+Automate and verify the below basic functionalities of the OrangeHRM app using Cypress.
 1. Login
 2. User/Candidate Creation
 3. Created User/Candidate details verification
